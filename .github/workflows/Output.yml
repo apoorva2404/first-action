@@ -6,4 +6,6 @@ jobs:
     steps: 
       - name: output github context
         run:  echo "${{ toJSON(github) }}"
+      - name: output log
+        run: echo "Goodbye"
 
