@@ -1,0 +1,16 @@
+name: Learning event filters
+on: 
+  pull_request:
+    types: opened
+  workflow_dispatch:
+  push: 
+    branches: #target branch pe agar push ho raha h toh hi
+      - main 
+      - 'dev-*'
+      - 'feat/*'
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Log message
+        run: echo "A pull request has been opened"
