@@ -1,7 +1,13 @@
-name: Learning activity types
+name: Learning event filters
 on: 
   pull_request:
     types: opened
+  workflow_dispatch:
+  push: 
+    branches: #target branch pe agar push ho raha h toh hi
+      - main 
+      - 'dev-*'
+      - 'feat/*'
 jobs:
   log:
     runs-on: ubuntu-latest
