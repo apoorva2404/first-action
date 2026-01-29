@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Log message
-        run: echo "A pull request has been opened"
+        run: echo "Pushed to main branch"
