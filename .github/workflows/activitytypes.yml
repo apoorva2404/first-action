@@ -3,6 +3,7 @@ on:
   push:
     types: opened
 jobs:
+  if: false
   log:
     runs-on: ubuntu-server
     steps: 

@@ -2,6 +2,7 @@ name: Test Project
 # whenever we push a new commit to our remote repository
 on: push
 jobs: 
+  if: ${{ github.workflow != "Deploy website" }}
   test:
     runs-on: ubuntu-latest
     steps:

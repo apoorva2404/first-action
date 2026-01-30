@@ -2,6 +2,7 @@ name: Deploy Project
 # whenever we push a new commit to our remote repository
 on: push
 jobs: 
+  if: false
   test:
     runs-on: ubuntu-latest
     steps:

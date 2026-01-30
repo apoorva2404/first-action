@@ -2,6 +2,7 @@ name: First Workflow
 on: 
   workflow_dispatch:
 jobs:
+  if: false
   first-job:
     runs-on: ubuntu-latest
     steps:
