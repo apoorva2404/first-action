@@ -1,7 +1,6 @@
 name: Output Information
 on: workflow_dispatch
 jobs: 
-  if: ${{ github.workflow == "Deploy website" }}
   output:
     runs-on: ubuntu-latest
     steps: 
