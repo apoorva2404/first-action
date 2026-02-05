@@ -31,7 +31,7 @@ jobs:
         id: publish
         run: |
           FILE=$(find dist/assets/*.js -type f -exec basename {} \;)
-          echo "script-file=$FILE" >> $GITHUB_OUTPUT
+          echo "my-output-file=$FILE" >> $GITHUB_OUTPUT
       - name: upload artifacts
         uses: actions/upload-artifact@v4
         with: 
