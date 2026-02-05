@@ -46,6 +46,6 @@ jobs:
       - name: Output artifacts
         run: ls
       - name: output files 
-        run: echo "${{ toJSON(needs.build.outputs.my-output-file) }}"
+        run: echo "${{ toJSON(needs.build.outputs) }}"
       - name: Deploy
         run: echo "Deploying..."
